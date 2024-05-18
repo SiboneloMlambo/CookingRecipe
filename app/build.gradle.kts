@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.underdogs.cookingreciept"
+    namespace = "com.underdogs.cookingrecipe"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.underdogs.cookingreciept"
+        applicationId = "com.underdogs.cookingrecipe"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
