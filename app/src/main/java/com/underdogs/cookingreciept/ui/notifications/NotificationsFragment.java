@@ -10,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.underdogs.cookingreciept.databinding.FragmentNotificationsBinding;
+import com.underdogs.cookingrecipe.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 

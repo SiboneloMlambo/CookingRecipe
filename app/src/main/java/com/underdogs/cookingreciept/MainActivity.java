@@ -12,7 +12,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.underdogs.cookingreciept.databinding.ActivityMainBinding;
+import com.underdogs.cookingrecipe.R;
+import com.underdogs.cookingrecipe.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.underdogs.cookingreciept.R;
-import com.underdogs.cookingreciept.databinding.FragmentHomeBinding;
+import com.underdogs.cookingrecipe.R;
+import com.underdogs.cookingrecipe.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
 
