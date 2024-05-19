@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="true">
+
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -16,5 +16,10 @@
         android:layout_marginEnd="@dimen/fab_margin"
         android:layout_marginBottom="65dp"
         app:srcCompat="@drawable/ic_fab_plus" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Post_Recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

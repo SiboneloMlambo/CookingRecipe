@@ -3,17 +3,19 @@ package com.underdogs.cookingreciept.ui.home;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.underdogs.cookingrecipe.R;
 
 public class HomeViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+
+
+
 
     public HomeViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+//        response_recycler_view = findViewById(R.id.Post_Recycler_view);
     }
 
-    public LiveData<String> getText() {
-        return mText;
-    }
+
 }

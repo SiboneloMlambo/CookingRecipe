@@ -4,4 +4,39 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
+    <string name="create_post">Create Post</string>
+    <string name="todo">TODO</string>
+    <string name="recipe_name">Enter Recipe Name</string>
+    <string name="enter_instructions">Enter Instructions</string>
+    <string name="cooking_time">Cooking Time</string>
+    <string name="sibonelo">Sibonelo</string>
+    <string name="mlambosboh_gmail_com">mlambosboh@gmail.com</string>
+    <string name="mocha_mama_jeqe">Mocha mama Jeqe</string>
+    <string name="lorem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</string>
+    <string name="ingredient">ingredient</string>
+    <string name="_01_25">01:25</string>
+    <string name="_1">1</string>
+    <string name="comments">Comments :</string>
+    <string name="_5">5</string>
+
+    <string-array name="food_category_array">
+        <item>Halal</item>
+        <item>Vegans</item>
+        <item>Salads</item>
+        <item>Bria</item>
+        <item>Fruits and vegetables</item>
+    </string-array>
+
+    <string-array name="Ingredients_array">
+        <item>Onions</item>
+        <item>Tomatoes</item>
+        <item>Cucumbers</item>
+        <item>Cabbage</item>
+        <item>Flour</item>
+        <item>Salt</item>
+        <item>Sugar</item>
+        <item>Vinegar</item>
+    </string-array>
+
+
 </resources>
