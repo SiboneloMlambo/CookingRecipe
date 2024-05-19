@@ -75,7 +75,9 @@ public class HomeFragment extends Fragment {
 
     private void volleyGet() {
             String url = "https://khethelihle-ireland.s3.eu-west-1.amazonaws.com/api/recipes.json?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMSJIMEYCIQDAfOriEh0iJJp2Nz994WUYvh%2FSpl3MTioipbkRtbs5mAIhAIUau7DFgkCG0qQinrEZ%2FHeR%2FnP4E9MOswNd%2BZ2ZPw7xKu8CCP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBBoMOTg1NzAxODE5NjExIgwbn6DughJGp6lxLgEqwwLmV26CWWtKNH%2BPGAZKCpfB64qmvayS%2Bimn1Pr8b2WSnLQ1OEMad1jf0B%2Fan2rYpzXBkHIl17KkiqajzZZrY1KUCNJtGicbTe%2Fi3PWxvq7TzMPsgCtlFFnBqL4CkKOL8Ke5AtsSSrvTU5BxZYhestg7G%2B7MXmu5QudrifHi1i84ZP7PmxqiaHVF0OCj2pf8m5B4Ft73XmN0TuDIvERG%2Fm8RBrOmjXE9yloOB04oJjR3o%2FExRRBv%2B5QMqgctWt4ti6HsIIuawqC4rwNJlXKkQ8U1mGVuXEfrgvDmK0JrKmwhNmvQ65ZRpj436FBSrkiT%2FXbYn7oTCl7QJ4gwl3FM06NeBph3zBNr%2FG9jhT93WHoT1CiZyrUBlrIJIVnph%2BNN9FFL7CSKI9AQuocwSh2KhlHYDYvwfGATVN0lWSGxX67juOM%2FSTCSnaSyBjqGAg%2Bt5rIK7EAxwDQsxfQWHNTE6Rvzs5bp%2Bg7%2B0D19Z8vj0%2F%2BEiPFH9SVVddyOJcadccBHeY8LD%2BHeuUASQeOuz778dpZI7R125YwjujS3DpqF7OutNJnhvzmlQ0l8aqtji2XY9y10RPn0lBOmepP8Wn9eEWMi2MGyM3zk%2BahVLvzeSdSu9ppNpWVga2Vxh9q%2BqoC8RMiWmiXAk%2Be%2BWEzPMtNh83RGNrzbGodjnXRzBXaJtDESpOJuOWkP8DWfI76aKzDkmWk3GuP3s2Gvg9Qs4dxNFUTRQqz7JgfmC86vIO1qJ%2FDkydFfRWn%2BjJLfZ24DuEmScCOJYC5v5qG%2BuCP7A%2BPpM9Mg%2BeU%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240519T060647Z&X-Amz-SignedHeaders=host&X-Amz-Expires=43200&X-Amz-Credential=ASIA6LADIETNXKL46QMI%2F20240519%2Feu-west-1%2Fs3%2Faws4_request&X-Amz-Signature=d87caa5153928e44ec2ada3fb8bcd5b3c40c241f5e0d861c2f4633955e129722";
-            List<Recipe> jsonResponses = new ArrayList<>();
+//            String url = "https://github.com/Khethelihle/spark-dev-repo/blob/Khethelihle-patch-1/recipes.json";
+         //String url = "./SampleData/recipes.json";
+        List<Recipe> jsonResponses = new ArrayList<>();
 
             RequestQueue requestQueue = Volley.newRequestQueue(getActivity());
             JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
