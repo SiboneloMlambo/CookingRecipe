@@ -6,20 +6,20 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
-
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="@dimen/fab_margin"
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
         android:layout_marginBottom="65dp"
+        android:contentDescription="@string/todo"
         app:srcCompat="@drawable/ic_fab_plus" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/Post_Recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="0dp" />
+        android:layout_height="wrap_content" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

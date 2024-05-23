@@ -8,12 +8,22 @@ public class NotificationsViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
+    private final MutableLiveData<String> nText;
+
     public NotificationsViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is notifications fragment");
+
+        nText = new MutableLiveData<>();
+        nText.setValue("This is dashboard fragment from View Model Class");
     }
 
     public LiveData<String> getText() {
         return mText;
     }
+
+    public LiveData<String> getNText() {
+        return nText;
+    }
+
 }

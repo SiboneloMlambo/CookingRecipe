@@ -22,12 +22,12 @@ public class Recipe {
 //        this.user_id = user_id;
         this.email = email;
         this.firstName = firstName;
-        this.lastName = lastName;
+  //      this.lastName = lastName;
         this.recipeName = recipeName;
         this.imageURL = imageURL;
         this.recipeIngredients = recipeIngredients;
         this.recipeInstructions = recipeInstructions;
-        this.recipeCategory = recipeCategory;
+       // this.recipeCategory = recipeCategory;
 //        Likes = likes;
 //        Comments = comments;
         this.time = time;
@@ -131,17 +131,12 @@ public class Recipe {
     @Override
     public String toString() {
         return "Recipe{" +
-                "user_id=" + user_id +
                 ", email='" + email + '\'' +
                 ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
                 ", recipeName='" + recipeName + '\'' +
                 ", imageURL='" + imageURL + '\'' +
                 ", recipeIngredients='" + recipeIngredients + '\'' +
                 ", recipeInstructions='" + recipeInstructions + '\'' +
-                ", recipeCategory='" + recipeCategory + '\'' +
-                ", Likes='" + Likes + '\'' +
-                ", Comments='" + Comments + '\'' +
                 '}';
     }
 }

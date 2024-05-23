@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.underdogs.cookingreciept.ui.home.HomeFragment;
 import com.underdogs.cookingrecipe.R;
 
@@ -19,14 +20,14 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
     private List<Recipe> retrievedResponses;
-    private HomeFragment context;
+    private Context context;
+
     public RecyclerViewAdapter(List<Recipe> retrievedResponses) {
         this.retrievedResponses = retrievedResponses;
 //        this.context = context;
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
-
         private int user_id_field;
         private TextView email_field;
         private TextView  firstName_field;
@@ -55,10 +56,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         }
 
-            public void setEmail_field (String email){
+        public void setEmail_field (String email){
                 email_field.setText(email);
             }
-
             public void setFirstName_field (String firstName){
                 firstName_field.setText(firstName);
         }
@@ -83,11 +83,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             time_field.setText(time);
         }
 
-
     }
 
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context.getActivity()).inflate(R.layout.recyclerview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview, parent, false);
         return new ViewHolder(view);
     }
 
@@ -101,8 +100,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.recipeIngredients_field(retrievedResponses.get(position).getRecipeIngredients());
         holder.recipeInstructions_field(retrievedResponses.get(position).getRecipeInstructions());
         holder.time_field(retrievedResponses.get(position).getTime());
+        Picasso.get()
+                .load(retrievedResponses
+                        .get(position)
+                        .getImageURL())
+                .placeholder(R.drawable.image_placeholder)
+                .into(holder.imageURL_field);
     }
-
     @Override
     public int getItemCount() {
         return retrievedResponses.size();

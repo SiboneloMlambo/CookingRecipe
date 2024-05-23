@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -25,7 +24,9 @@ public class NotificationsFragment extends Fragment {
         View root = binding.getRoot();
 
         final TextView textView = binding.textNotifications;
+        final TextView textView1 = binding.textDashboardTest;
         notificationsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        notificationsViewModel.getNText().observe(getViewLifecycleOwner(), textView1::setText);
         return root;
     }
 
