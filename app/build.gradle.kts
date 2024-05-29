@@ -35,9 +35,9 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
-    implementation(libs.material)
+    implementation(libs.material) // Use this if you want stable version
+    // implementation(libs.materialAlpha) // Use this if you need alpha version features
     implementation(libs.constraintlayout)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
@@ -48,6 +48,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation (libs.material.v130alpha03)
-    implementation (libs.picasso)
+    implementation(libs.picasso)
+    implementation("com.squareup.okhttp3:okhttp:4.9.0")
+    implementation("com.google.code.gson:gson:2.8.6")
+    implementation("com.android.volley:volley:1.2.0")
+
 }

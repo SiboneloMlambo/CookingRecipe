@@ -7,6 +7,12 @@
     android:layout_height="match_parent"
     tools:context="com.underdogs.cookingreciept.CreatePost">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_25_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
 
     <Button
         android:id="@+id/posts_button"
@@ -17,15 +23,14 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline_25_percent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="665dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
@@ -55,14 +60,12 @@
             android:layout_marginEnd="10dp"
             android:hint="@string/recipe_name">
 
-            <!--this is the actual edit text which takes the input-->
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/name_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </com.google.android.material.textfield.TextInputLayout>
-
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/Instructions"
@@ -73,7 +76,6 @@
             android:layout_marginEnd="10dp"
             android:hint="@string/enter_instructions">
 
-            <!--this is the actual edit text which takes the input-->
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Instructions_edit"
                 android:layout_width="match_parent"
@@ -81,15 +83,13 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-
         <Spinner
             android:id="@+id/ingredients"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"/>
-
+            android:layout_marginEnd="10dp" />
 
         <Spinner
             android:id="@+id/CategoryList"
@@ -97,7 +97,36 @@
             android:layout_height="50dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"/>
+            android:layout_marginEnd="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:hint="@string/select_ingredients">
+
+            <AutoCompleteTextView
+                android:id="@+id/ingredients_multi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:completionThreshold="1"
+                android:dropDownHeight="wrap_content"
+                android:dropDownWidth="match_parent"
+                android:popupBackground="@android:color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:singleLine="false"
+            app:chipSpacing="8dp" />
 
         <Button
             android:id="@+id/Time_button"
@@ -106,17 +135,8 @@
             android:backgroundTint="#2C6897"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            />
-
-
-
+            android:layout_margin="8dp"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ingredients_array">
+        <item>Salt</item>
+        <item>Pepper</item>
+        <item>Sugar</item>
+        <item>Flour</item>
+        <item>Butter</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>
